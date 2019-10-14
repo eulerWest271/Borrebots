@@ -19,9 +19,9 @@ class ToggleCount extends Component {
             <div>
             <h1>{this.props.tipo} : {this.state.puntos}</h1>
             <Button onClick = {()=>{
-                    if(this.state.estado){
+                    if(!this.state.estado){
 
-                        this.setState({puntos: 10, estado: !this.state.estado})
+                        this.setState({puntos: this.props.puntos, estado: !this.state.estado})
                     }
                     else{
 
