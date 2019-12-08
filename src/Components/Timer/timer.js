@@ -57,7 +57,7 @@ class Timer extends Component {
 
 
                         
-                            if(this.state.tiempo >this.props.lim){
+                            if(this.state.tiempo >=this.props.lim){
                                 if (this.state.tiempo>this.props.driver){
 
                            
